@@ -1,0 +1,21 @@
+name: Feature request
+description: Suggest a new feature or an improvement.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: What are you trying to do?
+      description: The task on the host, for example "submit JCL from an open file" or "map F13 to PF13".
+    validations:
+      required: true
+  - type: textarea
+    id: today
+    attributes:
+      label: How do you do it today?
+      description: In Iron 3270, or in another 3270 terminal you've used.
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would help?
+      description: The feature or change you have in mind, if any.
