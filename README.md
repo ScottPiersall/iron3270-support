@@ -7,6 +7,7 @@ Code and other VS Code-based editors. It connects to z/OS, z/VM and other IBM ma
   · [Open VSX](https://open-vsx.org/extension/ScottPiersall/iron3270) (IBM Bob, VSCodium and others)
 - **Website and user guide:** https://iron3270.scottpiersall.com/
 - **Changes in each version:** the Changelog tab on the Marketplace page
+- **Writing macros:** the [macro guide](docs/macros.md)
 
 This repository holds no source code. It's the public place to report problems and to follow how
 they are fixed.
