@@ -86,13 +86,14 @@ A macro always runs in a terminal session. Choose one of these ways:
 | A custom toolbar button | Add `{ "label": "Logon", "macro": "logon" }` to `iron3270.macros.toolbar`. |
 | Automatically after connecting | In the connection's settings, set **Startup macro**. |
 
-While a macro runs, the OIA shows `MACRO`, and a notification shows its name. Only one macro runs
+While a macro runs, the OIA shows `MACRO` and the status bar shows its name. To get a notification
+with a **Cancel** button instead, turn on `iron3270.macros.showNotification`. Only one macro runs
 in a session at a time, but different sessions can each run one.
 
 ### Stopping a macro
 
-Click the **■** button that replaces **▶** in the toolbar, click **Cancel** on the notification,
-or run **Iron 3270: Stop Running Macro**. The macro stops
+Click the **■** button that replaces **▶** in the toolbar, or run **Iron 3270: Stop Running
+Macro**, or click **Cancel** on the notification if you turned it on. The macro stops
 before its next statement, and also in the middle of a wait.
 
 ## 3. Your first hand-written macro
@@ -511,4 +512,5 @@ before anything consequential.
 | `iron3270.macros.folder` | (extension storage) | Folder for `.3270macro` files. |
 | `iron3270.macros.maxSteps` | `100000` | Most statements one run may execute. |
 | `iron3270.macros.defaultTimeoutSeconds` | `30` | Timeout for `wait` statements that don't give one. |
+| `iron3270.macros.showNotification` | `false` | A notification with **Cancel** while a macro runs, instead of the status bar. |
 | `iron3270.macros.toolbar` | `[]` | Custom toolbar buttons: `{ "label", "macro" }` or `{ "label", "action" }`. |
